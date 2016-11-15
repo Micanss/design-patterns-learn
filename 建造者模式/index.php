@@ -11,9 +11,6 @@ abstract class Builder
 	abstract public function getResult();
 }
 
-/**
-* cat builder
-*/
 class CarBuilder extends Builder
 {
 	function __construct()
@@ -37,9 +34,6 @@ class CarBuilder extends Builder
 	}
 }
 
-/**
-* car
-*/
 class Car
 {
 	protected $partA;
@@ -64,9 +58,6 @@ class Car
 	}
 }
 
-/**
-* director
-*/
 class Director
 {
 	public $myBuilder;

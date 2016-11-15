@@ -3,7 +3,6 @@ interface Animal{
 	public function run();
 	public function say();
 }
-
 class Cat implements Animal
 {
 	public function run(){
@@ -13,7 +12,6 @@ class Cat implements Animal
 		echo "I am Cat class <br>";
 	}
 }
-
 class Dog implements Animal
 {
 	public function run(){
@@ -23,14 +21,9 @@ class Dog implements Animal
 		echo "I am Dog class <br>";
 	}
 }
-
 abstract class Factory{
 	abstract static function createAnimal();
 }
-
-/**
-* cat factory
-*/
 class CatFactory extends Factory
 {
 	public static function createAnimal()
@@ -38,10 +31,6 @@ class CatFactory extends Factory
 		return new Cat();
 	}
 }
-
-/**
-* dog factory
-*/
 class DogFactory extends Factory
 {
 	public static function createAnimal()

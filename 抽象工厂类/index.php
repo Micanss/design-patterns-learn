@@ -5,9 +5,6 @@ interface TV{
 	public function use();
 }
 
-/**
-* haier tv 
-*/
 class HaierTv implements TV
 {
 	public function open()
@@ -26,9 +23,6 @@ interface PC{
 	public function play();
 }
 
-/**
-* lenovo pc
-*/
 class LenovoPc implements PC
 {
 	public function work()
@@ -40,14 +34,12 @@ class LenovoPc implements PC
 		echo "Lenovo computers can be used to play games <br>";
 	}
 }
+
 abstract class Factory{
 	abstract public static function createPc();
 	abstract public static function createTv();
 }
 
-/**
-* product factory
-*/
 class ProductFactory extends Factory
 {
 	public static function createTV()
