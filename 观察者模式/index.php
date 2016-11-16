@@ -33,9 +33,6 @@ abstract class Subject{
 	}
 }
 
-/**
-* subject
-*/
 class MySubject extends Subject
 {
 	protected $state;
@@ -50,9 +47,6 @@ class MySubject extends Subject
 	}
 }
 
-/**
-* obeserver
-*/
 class MyObeserver extends Obeserver
 {
 	protected $obeserverName;

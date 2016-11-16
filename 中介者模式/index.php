@@ -9,9 +9,6 @@ abstract class Colleague{
 	}
 }
 
-/**
-* tonghisA
-*/
 class ColleagueA extends Colleague
 {
 	public function sendMsg($toWho,$msg)
@@ -45,9 +42,6 @@ abstract class Mediator{
 	abstract public function register($id,Colleague $colleague);
 }
 
-/**
-* juti
-*/
 class MyMediator extends Mediator
 {
 	protected static $colleagues;
@@ -82,5 +76,5 @@ $colleagueB = new ColleagueB();
 $mediator = new MyMediator();
 $mediator->register(1,$colleagueA);
 $mediator->register(2,$colleagueB);
-$colleagueA->sendMsg(2,'hello fuli');
+$colleagueA->sendMsg(2,'hello admin');
 $colleagueB->sendMsg(1,'shiyanlou');

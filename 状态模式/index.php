@@ -21,9 +21,6 @@ abstract class State{
 	abstract function handle(Context $context);
 }
 
-/**
-* stateA
-*/
 class StateA extends State
 {
 	private static $instance;

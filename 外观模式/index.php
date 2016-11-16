@@ -1,8 +1,5 @@
 <?php 
 
-/**
-* system A
-*/
 class SystemA
 {
 	public function operationA()
@@ -27,9 +24,6 @@ class SystemC
 	}
 }
 
-/**
-* Fade
-*/
 class Facade
 {
 	protected $systemA;
