@@ -1,10 +1,9 @@
 <?php 
-/**
-* singleton
-*/
+
 class Singleton
 {
 	private static $instance;
+	//私有构造方法，禁止使用new创建对象
 	private function __construct(){}
 
 	public static function getInstance(){
@@ -13,7 +12,7 @@ class Singleton
 		}
 		return self::$instance;
 	}
-
+	//将克隆方法设为私有，禁止克隆对象
 	private function __clone(){}
 
 	public function say()
